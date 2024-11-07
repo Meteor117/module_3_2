@@ -3,7 +3,7 @@ def send_email(message, recipient, sender="university.help@gmail.com"):
 
     if ("@" or (".com" or ".ru" or ".net")) not in (recipient and sender):
         print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}.")
-        return
+        
 
     elif recipient == sender:
         print(f"Нельзя отправить письмо самому себе!")
